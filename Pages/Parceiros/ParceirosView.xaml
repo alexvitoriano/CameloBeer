@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="CameloBeer.Pages.Parceiros.ParceirosView"
+             xmlns:local="clr-namespace:CameloBeer.Helpers;assembly=CameloBeer"
+             >
+
+  <ScrollView>
+
+  <StackLayout Padding="0" Spacing="0" BackgroundColor="{x:Static local:AppColors.CONTENTLIGHTBKG}">
+
+    <StackLayout Padding="15, 10, 15, 0">
+      <Label Text="Esses são os parceiros que tornam a Camelo Beer Realidade!"  
+             TextColor="{x:Static local:AppColors.LABELBLACK}" />
+    </StackLayout>
+
+
+    <StackLayout Padding="15, 10, 15, 10">
+      <Label Text="Parceiros:" Font="Bold, Large" HorizontalOptions="FillAndExpand" TextColor="{x:Static local:AppColors.LABELWHITE}" />
+
+      <Button x:Name="imgOLEC" Image="olec.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Clicked="OnButtonClicked_imgOLEC"></Button>  
+
+      <Button x:Name="imgFMER" Image="fmer.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Clicked="OnButtonClicked_imgFMER"></Button>  
+
+      <Button x:Name="imgExB" Image="experimento.jpg" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Clicked="OnButtonClicked_imgExB"></Button> 
+
+      <Label Text="Desenvolvido Por:" Font="Bold, Large" HorizontalOptions="FillAndExpand" TextColor="{x:Static local:AppColors.LABELWHITE}" />
+      
+      <Label Text="Alex Vitoriano" Font="Bold" HorizontalOptions="FillAndExpand" TextColor="{x:Static local:AppColors.LABELWHITE}" />
+      <Button Text="alexvitoriano.com"  TextColor="{x:Static local:AppColors.LABELBLACK}" x:Name="btnAlex" Clicked="OnButtonClicked_btnAlex" />
+    </StackLayout>
+
+
+  </StackLayout>
+
+  </ScrollView>
+
+
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 x:Class="CameloBeer.Pages.Copos.CoposView"
+						 xmlns:local="clr-namespace:CameloBeer.Helpers;assembly=CameloBeer"
+						 >
+
+	<ScrollView>
+
+		<StackLayout Padding="0" Spacing="0" BackgroundColor="{x:Static local:AppColors.CONTENTLIGHTBKG}">
+
+			<Image Source="{Binding Copo.ImageSrc}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+
+			<StackLayout Padding="5,10,5,10" Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="{x:Static local:AppColors.CONTENTLIGHTBKG}">
+				<Label Text="{Binding Copo.ItemName}" Font="Bold" HorizontalOptions="FillAndExpand" XAlign="Center" TextColor="{x:Static local:AppColors.LABELWHITE}" />
+			</StackLayout>
+
+      <StackLayout Padding="15, 10, 15, 0">
+<!--        <Label Text="{Binding Copo.Summary}" Font="Bold" HorizontalOptions="CenterAndExpand" XAlign="Center" TextColor="{x:Static local:AppColors.LABELBLUE}" />-->
+        <Label Text="{Binding Copo.Description}" XAlign="Center" TextColor="{x:Static local:AppColors.LABELBLACK}" />
+      </StackLayout>
+
+
+
+    </StackLayout>
+
+	</ScrollView>
+
+</ContentPage>
